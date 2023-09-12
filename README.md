@@ -1,4 +1,5 @@
 # Exploring US Bikeshare data in 3 major cities in USA - python script, web app deployment using flask
+![bikeshare](bikeshare.png)
 # Bikeshare Data Explorer
 
 Bikeshare Data Explorer is a Python web application that allows users to explore and analyze bike sharing data from different cities. With this application, users can filter data by city, month, and day to view statistics and gain insights into bike sharing trends.
