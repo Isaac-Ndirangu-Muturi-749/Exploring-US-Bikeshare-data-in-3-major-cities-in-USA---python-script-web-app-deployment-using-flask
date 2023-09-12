@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Bikeshare Data Explorer</title>
+</head>
+<body>
+    <header>
+        <h1>Bikeshare Data Explorer</h1>
+    </header>
+    <main>
+        <form method="POST" action="/results">
+            <label for="city">Select City:</label>
+            <select name="city" id="city">
+                <option value="chicago">Chicago</option>
+                <option value="new york city">New York City</option>
+                <option value="washington">Washington</option>
+            </select>
+
+            <br><br>
+            <label for="month">Select Month:</label>
+            <select name="month" id="month">
+                <option value="all">All Months</option>
+                <option value="january">January</option>
+                <option value="february">February</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="may">May</option>
+                <option value="june">June</option>
+            </select>
+            <br><br>
+            <label for="day">Select Day:</label>
+            <select name="day" id="day">
+                <option value="all">All Days</option>
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+                <option value="sunday">Sunday</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Explore Data">
+        </form>
+    </main>
+</body>
+</html>
