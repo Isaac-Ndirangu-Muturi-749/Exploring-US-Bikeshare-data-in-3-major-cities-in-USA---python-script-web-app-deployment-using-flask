@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Bikeshare Data Explorer - Results</title>
+</head>
+<body>
+    <header>
+        <h1>Bikeshare Data Explorer - Results</h1>
+    </header>
+    <main>
+        <!-- Your result statistics here -->
+        <div class="results">
+            <h2>Statistics:</h2>
+            <ul>
+                {% for key, value in statistics.items() %}
+                    <li>{{ key }}: {{ value }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!-- Add a link to return to the main page -->
+        <a href="/">Back to Input</a>
+        
+        <!-- Social media links -->
+        <div class="social-media">
+            <p>Follow me on Twitter 🐦, connect with me on LinkedIn 🔗, and check out my GitHub 🐙. You won't be disappointed!</p>
+            <ul>
+                <li>👉 <a href="https://twitter.com/NdiranguMuturi1" target="_blank">Twitter</a></li>
+                <li>👉 <a href="https://www.linkedin.com/in/isaac-muturi-3b6b2b237" target="_blank">LinkedIn</a></li>
+                <li>👉 <a href="https://github.com/Isaac-Ndirangu-Muturi-749" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
