@@ -42,19 +42,16 @@ def calculate_statistics(df):
         "popular times of travel": {
             "most common month": None,
             "most popular day of the week for bike rentals": None,
-            "most common hour of day": None,
-        },
+            "most common hour of day": None},
         "popular stations and trip": {
             "most popular start station": None,
             "most popular end station": None,
             "most common trip from start to end": None,
-            "number of unique starting stations": None,
-        },
+            "number of unique starting stations": None},
         "trip duration": {
             "average trip duration (in minutes)": None,
             "total travel time (in minutes)": None,
-            "longest trip duration recorded (in minutes)": None,
-        },
+            "longest trip duration recorded (in minutes)": None},
         "user info": {
             "counts of each user type": None,
             "counts of each gender": None,
@@ -62,9 +59,7 @@ def calculate_statistics(df):
             "most recent year of birth": None,
             "most common year of birth": None,
             "median age of users": None,
-            "average age of users": None,
-        }
-    }
+            "average age of users": None}}
     
     # Most common month
     most_common_month = df['month'].mode()[0]
