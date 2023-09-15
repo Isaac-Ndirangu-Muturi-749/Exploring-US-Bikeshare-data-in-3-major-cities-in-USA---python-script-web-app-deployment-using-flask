@@ -35,6 +35,10 @@ Before you begin, ensure you have met the following requirements:
   pip install Flask
   ```
 
+### For quick analysis, you can just run the python script bikeshare.py
+```bash
+    python bikeshare.py
+   ```
 ### Installation
 
 1. Clone this repository:
